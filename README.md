@@ -243,3 +243,13 @@ ln -s g++-{version} g++
 - Homebrew installs GCC using versioned executable names (`gcc-15`, `g++-15`, etc.) to avoid conflicts.
 - If you upgrade GCC to a newer major version, update the symbolic links to point to the new version.
 - The installation path `/opt/homebrew` applies to Apple Silicon Macs (M1, M2, M3, M4, M5 etc.). On Intel Macs, Homebrew is typically installed in `/usr/local`.
+
+- ---
+
+## References
+
+- [Homebrew Official Website](https://brew.sh)
+
+- [Homebrew Installation Documentation](https://docs.brew.sh/Installation)
+
+- [GCC (GNU Compiler Collection)](https://gcc.gnu.org/)
