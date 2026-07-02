@@ -143,9 +143,25 @@ ln -s g++-16 g++
 
 ## Step 6: Verify the Installation
 
-Check the installed compiler versions:
+### Refresh Your Shell
+
+After creating the symbolic links, refresh your shell so that the new `gcc` and `g++` commands are recognized immediately:
 
 ```bash
+hash -r
+rehash
+exec zsh
+```
+
+- `hash -r` clears Bash's command cache.
+- `rehash` refreshes Zsh's command cache.
+- `exec zsh` starts a new Zsh session and reloads your shell environment.
+
+You can now verify that the commands are available:
+
+```bash
+which gcc
+which g++
 gcc --version
 g++ --version
 ```
